@@ -95,7 +95,7 @@ These path names happen to be resolvable -- not just in a "multistream muxer(e.g
 
 ## Implementations
 
-- [go-multistream-select](https://github.com/multiformats/go-multistream-select)
+- [go-multistream-select](https://github.com/multiformats/go-multistream)
 - [js-multistream-select](https://github.com/multiformats/js-multistream-select)
 
 ## FAQ
