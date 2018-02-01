@@ -21,15 +21,15 @@
 
 ## Motivation
 
-Multicodecs are self-describing protocol/encoding streams. (Note that a file is a stream). It's designed to address the perennial problem:
+Multistreams are self-describing protocol/encoding streams. (Note that a file is a stream). It's designed to address the perennial problem:
 
 > I have a bitstring, what codec is the data coded with!?
 
 Instead of arguing about which data serialization library is the best, let's just pick the simplest one now, and build _upgradability_ into the system. Choices are never _forever_. Eventually all systems are changed. So, embrace this fact of reality, and build change into your system now.
 
-Multicodec frees you from the tyranny of past mistakes. Instead of trying to figure it all out beforehand, or continue using something that we can all agree no longer fits, why not allow the system to _evolve_ and _grow_ with the use cases of today, not yesterday.
+Multistream frees you from the tyranny of past mistakes. Instead of trying to figure it all out beforehand, or continue using something that we can all agree no longer fits, why not allow the system to _evolve_ and _grow_ with the use cases of today, not yesterday.
 
-To decode an incoming stream of data, a program must either (a) know the format of the data a priori, or (b) learn the format from the data itself. (a) precludes running protocols that may provide one of many kinds of formats without prior agreement on which. multistream makes (b) neat using self-description.
+To decode an incoming stream of data, a program must either (a) know the format of the data a priori, or (b) learn the format from the data itself. (a) precludes running protocols that may provide one of many kinds of formats without prior agreement on which. Multistream makes (b) neat using self-description.
 
 Moreover, this self-description allows straightforward layering of protocols without having to implement support in the parent (or encapsulating) one.
 
@@ -110,7 +110,7 @@ for cerealization hipsters.
 
 The one problem is figuring out what we're speaking. Humans are pretty smart, we pick up all sorts of languages over time. And we can always resort to pointing and grunting (the ascii of humanity).
 
-Programs have a harder time. You can't keep piping json into a protobuf decoder and hope they align. So we have to help them out a bit. That's what multicodec is for.
+Programs have a harder time. You can't keep piping json into a protobuf decoder and hope they align. So we have to help them out a bit. That's what multistream is for.
 
 > **Q. Why "codec" and not "encoder" and "decoder"?**
 
@@ -121,7 +121,7 @@ Because they're the same thing. Which one of these is the encoder and which the 
 
 > **Q. Full paths are too big for my use case, is there something smaller?**
 
-Yes, check out [multicodec-packed](./multicodec-packed.md). It uses a varint and a table to achieve the same thing.
+Yes, check out [multicodec](https://github.com/multiformats/multicodec). It uses a varint and a table to achieve the same thing.
 
 ## Maintainers
 
