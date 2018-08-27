@@ -13,7 +13,6 @@
   - [How does it work? - Protocol Description](#how-does-it-work---protocol-description)
   - [The protocol path](#the-protocol-path)
 - [Implementations](#implementations)
-  - [Implementation details]()
 - [FAQ](#faq)
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
@@ -121,7 +120,7 @@ Because they're the same thing. Which one of these is the encoder and which the 
 
 > **Q. Full paths are too big for my use case, is there something smaller?**
 
-Yes, check out [multicodec-packed](./multicodec-packed.md). It uses a varint and a table to achieve the same thing.
+Yes, check out [multicodec](https://github.com/multiformats/multicodec/blob/master/README.md). It uses a varint and a table to achieve the same thing.
 
 ## Maintainers
 
