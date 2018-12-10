@@ -122,10 +122,6 @@ Because they're the same thing. Which one of these is the encoder and which the 
 
 Yes, check out [multicodec](https://github.com/multiformats/multicodec/blob/master/README.md). It uses a varint and a table to achieve the same thing.
 
-## Maintainers
-
-Captain: [@jbenet](https://github.com/jbenet).
-
 ## Contribute
 
 Contributions welcome. Please check out [the issues](https://github.com/multiformats/multistream/issues).
